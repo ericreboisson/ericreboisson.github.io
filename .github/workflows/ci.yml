@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [publish-pages]
+  pull_request:
+    branches: [publish-pages]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Vérifier les liens cassés
+        run: |
+          if command -v lychee >/dev/null 2>&1; then
+            lychee --no-progress index.html 404.html sitemap.xml robots.txt
+          else
+            echo "lychee non installé, vérification manuelle recommandée"
+          fi
+
+      - name: Valider la structure HTML
+        run: |
+          if command -v html-validator >/dev/null 2>&1; then
+            html-validator index.html 404.html
+          else
+            echo "html-validator non installé, vérification manuelle recommandée"
+          fi

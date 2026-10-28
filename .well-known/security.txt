@@ -1,0 +1,7 @@
+# security.txt — Eric Reboisson
+# Contact pour signaler une faille de sécurité sur les projets open source liés.
+
+Contact: mailto:ericreboisson@proton.me
+Expires: 2027-10-28T12:00:00.000Z
+Canonical: https://ericreboisson.github.io/.well-known/security.txt
+Preferred-Languages: fr, en

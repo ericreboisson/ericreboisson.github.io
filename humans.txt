@@ -1,0 +1,16 @@
+/* Éric Reboisson — Développeur architecte, Luxembourg */
+/* Site fait main : HTML, CSS et JavaScript, sans framework ni build. */
+
+Développeur architecte — équipe Framework (banque, Luxembourg)
+Stack : Spring Boot 3, Java 25, Python 3.14, Angular 21, TypeScript
+Sécurité applicative — OCPJP, OCPWCD, ITIL Foundation
+Open source : npm-goodjob, lifecycle-timeline, checker-maven-plugin
+Contributeur Developpez.com depuis 2003 (statut Expert éminent)
+
+Sites :
+https://ericreboisson.github.io/
+https://github.com/ericreboisson
+https://www.linkedin.com/in/ericreboisson/
+https://www.developpez.com/user/profil/23974/elitost
+
+Dernière mise à jour : 2026-10-28
