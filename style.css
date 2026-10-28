@@ -903,3 +903,46 @@ ul, ol { list-style: none; }
   .js .reveal { opacity: 1 !important; transform: none !important; }
   body { background: #fff; color: #000; }
 }
+
+/* --- Section Projets --- */
+.projects-grid {
+  display: grid;
+  gap: var(--sp-6);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.project-card {
+  background: var(--panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+.project-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.project-desc {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+.project-links {
+  margin-top: var(--sp-2);
+  display: flex;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+.project-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+.project-links a:hover { text-decoration: underline; }
