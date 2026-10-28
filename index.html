@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===================================================================
+       SEO — Modifiez title et description pour adapter la page à votre SEO.
+       =================================================================== -->
+  <title>Eric Reboisson — Développeur architecte, Luxembourg</title>
+  <meta name="description" content="Développeur architecte dans une équipe Framework en banque. Je construis des librairies Angular et Spring Boot pour la sécurité, la validation et la charte graphique. Framework, Java, TypeScript, Python.">
+  <meta name="author" content="Eric Reboisson">
+  <link rel="canonical" href="https://ericreboisson.github.io/">
+
+  <!-- Open Graph — l'image est générée en 1200x630 (voir README) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ericreboisson.github.io/">
+  <meta property="og:title" content="Eric Reboisson — Développeur architecte">
+  <meta property="og:description" content="Je construis les frameworks Angular et Spring Boot sur lesquels tournent les applications du SI : sécurité, validation, charte graphique.">
+  <meta property="og:image" content="https://ericreboisson.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_LU">
+  <meta property="og:site_name" content="Eric Reboisson">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eric Reboisson — Développeur architecte">
+  <meta name="twitter:description" content="Je construis les frameworks Angular et Spring Boot sur lesquels tournent les applications du SI.">
+  <meta name="twitter:image" content="https://ericreboisson.github.io/assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Typographies : Inter (texte) + JetBrains Mono (labels techniques) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ===================================================================
+       Thème : appliqué AVANT le premier rendu pour éviter le flash blanc.
+       1. classe "js"  -> autorise le CSS à masquer les blocs à animer.
+                          Sans JavaScript, cette classe est absente et
+                          tout le contenu reste visible (repli progressif).
+       2. data-theme   -> choix mémorisé, sinon thème sombre par défaut.
+       =================================================================== -->
+  <script>
+    (function () {
+      var r = document.documentElement;
+      r.classList.add('js');
+      try {
+        var saved = localStorage.getItem('er-theme');
+        r.setAttribute('data-theme', saved || 'dark');
+      } catch (e) {
+        r.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Lien d'évitement : premier élément focusable, visible seulement au clavier -->
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <!-- ===================================================================
+       EN-TÊTE — navigation + bascule de thème
+       Pour ajouter un lien de nav : copiez un <li> et changez href + libellé.
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil">
+        <span class="brand-mark" aria-hidden="true">ER</span>
+        <span class="brand-name">Eric Reboisson</span>
+      </a>
+
+      <button class="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="nav-principale"
+              aria-label="Ouvrir le menu de navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="nav-principale" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#loisirs">Loisirs</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Bascule clair / sombre. Le libellé est mis à jour par script.js. -->
+        <button class="theme-toggle" type="button" aria-label="Passer en thème clair" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- =================================================================
+         1. HERO — modifiez le nom, le rôle, l'accroche et les 2 boutons.
+         ================================================================= -->
+    <section class="hero" id="accueil">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow reveal">Luxembourg</p>
+          <h1 class="reveal" style="--d:1">Eric Reboisson</h1>
+          <p class="hero-role reveal" style="--d:2">Développeur architecte — équipe Framework</p>
+          <p class="hero-pitch reveal" style="--d:3">
+            Je construis les frameworks Angular et Spring Boot sur lesquels tournent
+            les applications du SI : sécurité, validation, charte graphique.
+          </p>
+          <p class="hero-since reveal" style="--d:4">Dans l'informatique depuis 1999.</p>
+          <div class="hero-actions reveal" style="--d:5">
+            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+            <a class="btn btn-ghost" href="#contact">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-avatar reveal" style="--d:2">
+          <!-- Photo 100x100. Déposez votre image 800x800 dans assets/avatar.jpg
+               pour remplacer celle-ci (README, section « Remplacer la photo »). -->
+          <img src="assets/avatar.jpg" width="88" height="88"
+               alt="Portrait d'Eric Reboisson" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         2. À PROPOS — deux paragraphes. Restez factuel, n'ajoutez pas
+         de promesse que vous ne pouvez pas tenir.
+         ================================================================= -->
+    <section class="section" id="a-propos" aria-labelledby="titre-a-propos">
+      <div class="container">
+        <p class="eyebrow reveal">À propos</p>
+        <h2 class="section-title reveal" id="titre-a-propos" style="--d:1">Ce que je fais</h2>
+        <div class="prose reveal" style="--d:2">
+          <p>
+            Eric est développeur architecte au sein d'une équipe Framework dans une grande
+            banque luxembourgeoise. L'équipe est agnostique des métiers : elle produit des
+            librairies et des composants réutilisables que les applications du SI intègrent —
+            sécurité, validations des écrans, charte graphique.
+          </p>
+          <p>
+            Avant la banque, il était consultant Java puis architecte chez Fujitsu, sur des
+            applications bancaires également. Passionné d'informatique depuis l'âge de neuf ans,
+            il monte aussi des machines.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. COMPÉTENCES — un groupe = une ligne <li>. Dupliquez un groupe
+         entier pour en ajouter un nouveau.
+         ================================================================= -->
+    <section class="section" id="competences" aria-labelledby="titre-competences">
+      <div class="container">
+        <p class="eyebrow reveal">Compétences</p>
+        <h2 class="section-title reveal" id="titre-competences" style="--d:1">Le socle technique</h2>
+
+        <ul class="skills">
+          <li class="skill-group reveal" style="--d:2">
+            <h3>Langages</h3>
+            <ul class="chips">
+              <li>TypeScript</li><li>Java</li><li>Python</li><li>JavaScript</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:3">
+            <h3>Front-end</h3>
+            <ul class="chips">
+              <li>Angular</li><li>HTML</li><li>CSS</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:4">
+            <h3>Back-end</h3>
+            <ul class="chips">
+              <li>Spring Boot</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:5">
+            <h3>Infrastructure</h3>
+            <ul class="chips">
+              <li>ELK</li><li>Git</li><li>Shell</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:6">
+            <h3>Sécurité applicative</h3>
+            <ul class="chips">
+              <li>Contrôles d'accès</li><li>Durcissement</li><li>Revue de code</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. PROJETS — pour ajouter un projet : copiez un <article> complet.
+         La première carte (class="project project-featured") occupe deux
+         colonnes sur grand écran : c'est la mise en avant.
+         ================================================================= -->
+    <section class="section" id="projets" aria-labelledby="titre-projets">
+      <div class="container">
+        <p class="eyebrow reveal">Projets</p>
+        <h2 class="section-title reveal" id="titre-projets" style="--d:1">Open source</h2>
+        <p class="section-lead reveal" style="--d:2">
+          Des outils publiés sur npm. Le même travail que celui de l'équipe Framework,
+          appliqué à l'open source : des règles partagées, vérifiables par l'outil.
+        </p>
+
+        <div class="projects">
+
+          <!-- Projet 1 — chef de file : npm-goodjob -->
+          <article class="project project-featured reveal" style="--d:3">
+            <header class="project-head">
+              <h3>npm-goodjob</h3>
+              <p class="project-tagline">Agrégateur d'audit npm</p>
+            </header>
+            <p class="project-desc">
+              Onze outils d'audit npm en une seule commande : score de santé /20,
+              SBOM SPDX, rapport SARIF 2.1.0, Policy-as-Code, baseline et diff,
+              TUI interactive, hook pre-commit, commentaires automatiques sur les PR.
+            </p>
+            <ul class="chips chips-sm">
+              <li>TypeScript</li><li>Node.js</li><li>Supply chain</li><li>CI</li>
+            </ul>
+            <p class="project-proof">MIT · v0.6.4 · 186 téléchargements sur 30 jours</p>
+            <p class="project-links">
+              <a href="https://github.com/ericreboisson/npm-goodjob" target="_blank" rel="noopener noreferrer">
+                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+              <a href="https://www.npmjs.com/package/npm-goodjob" target="_blank" rel="noopener noreferrer">
+                npm<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+            </p>
+          </article>
+
+          <!-- Projet 2 — lifecycle-timeline (démo en ligne) -->
+          <article class="project reveal" style="--d:4">
+            <header class="project-head">
+              <h3>lifecycle-timeline</h3>
+              <p class="project-tagline">Timeline de cycles de vie</p>
+            </header>
+            <p class="project-desc">
+              Composant JavaScript typé pour visualiser la durée de vie d'un produit :
+              support open source, support entreprise, fin de vie. Recherche temps réel,
+              thème sombre natif, i18n, distribution ESM et UMD.
+            </p>
+            <ul class="chips chips-sm">
+              <li>TypeScript</li><li>JavaScript</li><li>CSS</li><li>Accessibilité</li>
+            </ul>
+            <p class="project-proof">MIT · v1.3.0 · 3 étoiles</p>
+            <p class="project-links">
+              <a class="link-demo" href="https://ericreboisson.github.io/lifecycle-timeline/" target="_blank" rel="noopener noreferrer">
+                Démo en ligne<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+              <a href="https://github.com/ericreboisson/lifecycle-timeline" target="_blank" rel="noopener noreferrer">
+                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+              <a href="https://www.npmjs.com/package/lifecycle-timeline" target="_blank" rel="noopener noreferrer">
+                npm<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+            </p>
+          </article>
+
+          <!-- Projet 3 — checker-maven-plugin (en pause, annoncé honnêtement) -->
+          <article class="project reveal" style="--d:5">
+            <header class="project-head">
+              <h3>checker-maven-plugin</h3>
+              <p class="project-tagline">Plugin Maven d'audit</p>
+            </header>
+            <p class="project-desc">
+              Plugin Maven extensible pour l'audit de projets Java multi-modules :
+              règles chargées dynamiquement via le SPI Java, rapports Markdown,
+              HTML ou texte.
+            </p>
+            <ul class="chips chips-sm">
+              <li>Java</li><li>Maven</li><li>SPI</li><li>Audit</li>
+            </ul>
+            <p class="project-proof project-proof-paused">En pause — à reprendre.</p>
+            <p class="project-links">
+              <a href="https://github.com/ericreboisson/checker-maven-plugin" target="_blank" rel="noopener noreferrer">
+                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. LOISIRS — volontairement séparé des projets professionnels.
+         Les dépôts vivent sur un second compte GitHub (asteroclash).
+         ================================================================= -->
+    <section class="section section-recessed" id="loisirs" aria-labelledby="titre-loisirs">
+      <div class="container">
+        <p class="eyebrow reveal">Loisirs</p>
+        <h2 class="section-title reveal" id="titre-loisirs" style="--d:1">Ce que je construis le soir</h2>
+        <p class="section-lead reveal" style="--d:2">
+          Du code pour le plaisir, sur un second compte GitHub. Pas de clients,
+          pas de SLA — mais les mêmes réflexes.
+        </p>
+
+        <!-- Repos sur https://github.com/asteroclash -->
+        <div class="hobbies">
+          <article class="hobby reveal" style="--d:3">
+            <h3>asteroclash.github.io</h3>
+            <p>Flyer hebdomadaire de la communauté Astero Level</p>
+            <p class="hobby-desc">
+              Vitrine de 18 clans et 897 membres : trophées, places en guerre de
+              clans et niveau minimum par clan, rafraîchis chaque mercredi depuis
+              l'API officielle Clash Royale.
+            </p>
+            <ul class="chips chips-sm">
+              <li>HTML</li><li>CSS</li><li>API Clash Royale</li><li>GitHub Pages</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://asteroclash.github.io/" target="_blank" rel="noopener noreferrer">
+                Voir le site<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+              <a href="https://github.com/asteroclash/asteroclash.github.io" target="_blank" rel="noopener noreferrer">
+                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+            </p>
+          </article>
+
+          <article class="hobby reveal" style="--d:4">
+            <h3>neon-breaker</h3>
+            <p>Jeu web</p>
+            <p class="hobby-desc">Jeu en un seul fichier HTML.</p>
+            <p class="project-links">
+              <a href="https://github.com/asteroclash/neon-breaker" target="_blank" rel="noopener noreferrer">
+                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
+              </a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. PARCOURS — les entrées "Bénévolat" et "Professionnel" sont
+         volontairement distinctes. Ajoutez une <li> pour un nouveau poste.
+         ================================================================= -->
+    <section class="section" id="parcours" aria-labelledby="titre-parcours">
+      <div class="container">
+        <p class="eyebrow reveal">Parcours</p>
+        <h2 class="section-title reveal" id="titre-parcours" style="--d:1">Vingt-sept ans</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal" style="--d:2">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <p class="timeline-meta">
+                <span class="timeline-org">Developpez.com</span>
+                <span class="badge badge-volunteer">Bénévolat</span>
+                <span class="timeline-period">depuis 2003</span>
+              </p>
+              <p class="timeline-desc">
+                Rédacteur, contributeur et responsable de la FAQ Maven et SCM.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal" style="--d:3">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <p class="timeline-meta">
+                <span class="timeline-org">Fujitsu</span>
+                <span class="badge badge-job">Professionnel</span>
+                <span class="timeline-period">2011 – 2016</span>
+              </p>
+              <p class="timeline-desc">
+                Consultant IT Expert Java, puis IT Architect. Développement et
+                architecture Java pour une banque luxembourgeoise : interfaces,
+                sécurité, communication, tests.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal" style="--d:4">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <p class="timeline-meta">
+                <span class="timeline-org">Banque, Luxembourg</span>
+                <span class="badge badge-job">Professionnel</span>
+                <span class="timeline-period">depuis 2016</span>
+              </p>
+              <p class="timeline-desc">
+                Développeur architecte, équipe Framework. Librairies et composants
+                réutilisables intégrés au SI, sécurité, validations des écrans,
+                charte graphique, support au déploiement continu.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. CONTACT — quatre liens, aucun formulaire, aucun backend.
+         Modifiez les href ci-dessous pour changer de coordonnées.
+         ================================================================= -->
+    <section class="section" id="contact" aria-labelledby="titre-contact">
+      <div class="container">
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal" id="titre-contact" style="--d:1">Écrire ou voir le code</h2>
+
+        <ul class="contact-list">
+          <li class="contact-item reveal" style="--d:2">
+            <span class="contact-label">E-mail</span>
+            <a class="contact-value" href="mailto:ericreboisson@proton.me">ericreboisson@proton.me</a>
+          </li>
+          <li class="contact-item reveal" style="--d:3">
+            <span class="contact-label">LinkedIn</span>
+            <a class="contact-value" href="https://www.linkedin.com/in/ericreboisson/" target="_blank" rel="noopener noreferrer">
+              /in/ericreboisson<span class="sr-only"> (ouvre un nouvel onglet)</span>
+            </a>
+          </li>
+          <li class="contact-item reveal" style="--d:4">
+            <span class="contact-label">GitHub</span>
+            <a class="contact-value" href="https://github.com/ericreboisson" target="_blank" rel="noopener noreferrer">
+              @ericreboisson<span class="sr-only"> (ouvre un nouvel onglet)</span>
+            </a>
+          </li>
+          <li class="contact-item reveal" style="--d:5">
+            <span class="contact-label">Developpez.com</span>
+            <a class="contact-value" href="https://www.developpez.com/user/profil/23974/elitost" target="_blank" rel="noopener noreferrer">
+              Profil elitost<span class="sr-only"> (ouvre un nouvel onglet)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       8. PIED DE PAGE
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="annee"></span> Eric Reboisson</p>
+      <p class="footer-note">Fait à la main : HTML, CSS et JavaScript, sans framework ni build.</p>
+      <a class="footer-top" href="#accueil">Retour en haut</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

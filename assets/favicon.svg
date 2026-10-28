@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="ER">
+  <!-- Favicon : monogramme ER sur le fond d'accent du site.
+       Pour changer la couleur, modifiez le fill du rect et celui du text. -->
+  <rect width="32" height="32" rx="7" fill="#4EA8FF"/>
+  <text x="16" y="16"
+        text-anchor="middle"
+        dominant-baseline="central"
+        font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+        font-size="14.5"
+        font-weight="700"
+        letter-spacing="-0.5"
+        fill="#06121F">ER</text>
+</svg>
