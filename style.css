@@ -946,3 +946,8 @@ ul, ol { list-style: none; }
   font-size: 0.875rem;
 }
 .project-links a:hover { text-decoration: underline; }
+
+/* Paragraphes justifiés dans les blocs de prose. */
+.prose p {
+  text-align: justify;
+}
