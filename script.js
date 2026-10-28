@@ -78,6 +78,10 @@
       navToggle.setAttribute('aria-expanded', String(open));
       navToggle.setAttribute('aria-label', open ? 'Fermer le menu de navigation' : 'Ouvrir le menu de navigation');
       siteNav.classList.toggle('is-open', open);
+      if (open) {
+        var firstLink = siteNav.querySelector('a');
+        if (firstLink) firstLink.focus();
+      }
     }
 
     navToggle.addEventListener('click', function () {

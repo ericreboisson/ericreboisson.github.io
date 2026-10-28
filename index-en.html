@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===================================================================
+       SEO — Modifiez title et description pour adapter la page à votre SEO.
+       =================================================================== -->
+  <title>Eric Reboisson — Developer architect, Luxembourg</title>
+  <meta name="author" content="Eric Reboisson">
+  <meta name="keywords" content="Spring Boot, Java, Python, Angular, TypeScript, application security, software architecture, SOA, batch, integration, Luxembourg, ITIL, OCPJP, OCPWCD, developer architect, LCM, Developpez.com">
+  <link rel="canonical" href="https://ericreboisson.github.io/index-en.html">
+  <link rel="alternate" hreflang="fr" href="https://ericreboisson.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ericreboisson.github.io/en/">
+  <meta property="og:title" content="Eric Reboisson — Developer architect">
+  <meta property="og:description" content="Developer architect in Luxembourg. I build Angular and Spring Boot frameworks that run the company's applications: security, validation, design system.">
+  <meta property="og:image" content="https://ericreboisson.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_LU">
+  <meta property="og:site_name" content="Eric Reboisson">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eric Reboisson — Developer architect">
+  <meta name="twitter:description" content="Developer architect in Luxembourg. Angular and Spring Boot frameworks, application security, validation, design system. Open source.">
+  <meta name="twitter:image" content="https://ericreboisson.github.io/assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Eric Reboisson",
+    "jobTitle": "Developer architect",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Bank, Luxembourg"
+    },
+    "knowsAbout": [
+      "Spring Boot", "Java", "Python", "Angular", "TypeScript",
+      "application security", "software architecture", "SOA", "batch", "integration"
+    ],
+    "url": "https://ericreboisson.github.io/en/",
+    "sameAs": [
+      "https://www.linkedin.com/in/ericreboisson/",
+      "https://github.com/ericreboisson",
+      "https://www.developpez.com/user/profil/23974/elitost"
+    ],
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "Fujitsu"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Typographies : Inter (texte) + JetBrains Mono (labels techniques) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="style.css?v=2">
+
+  <!-- ===================================================================
+       Thème : appliqué AVANT le premier rendu pour éviter le flash blanc.
+       =================================================================== -->
+  <script>
+    (function () {
+      var r = document.documentElement;
+      r.classList.add('js');
+      try {
+        var saved = localStorage.getItem('er-theme');
+        r.setAttribute('data-theme', saved || 'dark');
+      } catch (e) {
+        r.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Lien d'évitement : premier élément focusable, visible seulement au clavier -->
+  <a class="skip-link" href="#contenu">Skip to main content</a>
+
+  <!-- ===================================================================
+       EN-TÊTE — navigation + bascule de thème + changement de langue
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil">
+        <span class="brand-mark" aria-hidden="true">ER</span>
+        <span class="brand-name">Eric Reboisson</span>
+      </a>
+
+      <button class="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="nav-principale"
+              aria-label="Open navigation menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="nav-principale" aria-label="Main navigation">
+        <ul>
+          <li><a href="#a-propos">About</a></li>
+          <li><a href="#competences">Skills</a></li>
+          <li><a href="#projets">Projects</a></li>
+          <li><a href="#loisirs">Hobbies</a></li>
+          <li><a href="#parcours">Career</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Bascule clair / sombre. Le libellé est mis à jour par script.js. -->
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+        <!-- Changement de langue -->
+        <a class="lang-switch" href="index.html" hreflang="fr">Français</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1">
+
+    <!-- =================================================================
+         1. HERO
+         ================================================================= -->
+    <section class="hero" id="accueil">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow reveal">Luxembourg</p>
+          <h1 class="reveal" style="--d:1">Eric Reboisson</h1>
+          <p class="hero-role reveal" style="--d:2">Developer architect — Framework team</p>
+          <p class="hero-pitch reveal" style="--d:3">
+            I build the Angular and Spring Boot frameworks that run the company's applications:
+            security, validation, design system.
+          </p>
+          <div class="hero-metrics reveal" style="--d:4">
+            <span class="hero-metric">
+              <span class="hero-metric-value">27 years</span>
+              <span class="hero-metric-label">of IT experience</span>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric-value">100+</span>
+              <span class="hero-metric-label">Angular UI components</span>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric-value">Several hundred</span>
+              <span class="hero-metric-label">Java backend components</span>
+            </span>
+          </div>
+          <p class="hero-since reveal" style="--d:5">In IT since 1999.</p>
+          <div class="hero-actions reveal" style="--d:6">
+            <a class="btn btn-primary" href="#projets">See my projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero-avatar reveal" style="--d:2">
+          <img src="assets/avatar.jpg" width="88" height="88"
+               alt="Portrait of Eric Reboisson" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         2. ABOUT — two paragraphs. Stay factual, don't add promises
+         you cannot keep.
+         ================================================================= -->
+    <section class="section" id="a-propos" aria-labelledby="titre-a-propos">
+      <div class="container">
+        <p class="eyebrow reveal">About</p>
+        <h2 class="section-title reveal" id="titre-a-propos" style="--d:1">What I do</h2>
+        <div class="prose reveal" style="--d:2">
+          <p>
+            I am a developer architect within a Framework team at a Luxembourg
+            bank. The team designs libraries and reusable components integrated
+            across all SI applications: application security, screen validation,
+            design system.
+          </p>
+          <p>
+            Previously, I was a Java consultant then architect at Fujitsu, on
+            banking applications. Certified ITIL Foundation, OCPJP and OCPWCD.
+            I also publish open source tools on npm and Maven. Contributed to
+            Developpez.com from 2003 to 2016 (Expert éminent status, responsible
+            for the Maven and SCM FAQ).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. SKILLS — one group = one line <li>. Duplicate a full group
+         to add a new one.
+         ================================================================= -->
+    <section class="section" id="competences" aria-labelledby="titre-competences">
+      <div class="container">
+        <p class="eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal" id="titre-competences" style="--d:1">The technical foundation</h2>
+
+        <ul class="skills">
+          <li class="skill-group reveal" style="--d:2">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>TypeScript</li><li>Java</li><li>Python</li><li>JavaScript</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:3">
+            <h3>Front-end</h3>
+            <ul class="chips">
+              <li>Angular</li><li>HTML</li><li>CSS</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:4">
+            <h3>Back-end</h3>
+            <ul class="chips">
+              <li>Spring Boot</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:5">
+            <h3>Infrastructure</h3>
+            <ul class="chips">
+              <li>ELK</li><li>Git</li><li>Shell</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:6">
+            <h3>Application security</h3>
+            <ul class="chips">
+              <li>Access controls</li><li>Hardening</li><li>Code review</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:7">
+            <p class="skill-note">
+              All versions are kept up to date within the Life Cycle Management (LCM):
+              Spring Boot 3, Java 25, Python 3.14, Angular 21.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. PROJECTS — to add a project: copy a full <article>.
+         The first card (class="project project-featured") occupies two
+         columns on large screens: this is the highlight.
+         ================================================================= -->
+    <section class="section" id="projets" aria-labelledby="titre-projets">
+      <div class="container">
+        <p class="eyebrow reveal">Projects</p>
+        <h2 class="section-title reveal" id="titre-projets" style="--d:1">Open source</h2>
+        <p class="section-lead reveal" style="--d:2">
+          Tools published on npm. The same work as the Framework team,
+          applied to open source: shared rules, verifiable by the tool.
+        </p>
+
+        <div class="projects">
+
+          <!-- Projet 1 — chef de file : npm-goodjob -->
+          <article class="project project-featured reveal" style="--d:3">
+            <header class="project-head">
+              <h3>npm-goodjob</h3>
+              <p class="project-tagline">npm audit aggregator</p>
+            </header>
+            <div class="project-image">
+              <img src="assets/projects/npm-goodjob.png" alt="Screenshot of npm-goodjob: npm audit dashboard" loading="lazy" width="400" height="225">
+            </div>
+            <p class="project-desc">
+              Eleven npm audit tools in a single command: health score /20,
+              SPDX SBOM, SARIF 2.1.0 report, Policy-as-Code, baseline and diff,
+              interactive TUI, pre-commit hook, automatic PR comments.
+            </p>
+            <ul class="chips chips-sm">
+              <li>TypeScript</li><li>Node.js</li><li>Supply chain</li><li>CI</li>
+            </ul>
+            <p class="project-proof">MIT · v0.6.4 · 186 downloads over 30 days</p>
+            <p class="project-links">
+              <a href="https://github.com/ericreboisson/npm-goodjob" target="_blank" rel="noopener noreferrer">
+                Source code<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+              <a href="https://www.npmjs.com/package/npm-goodjob" target="_blank" rel="noopener noreferrer">
+                npm<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </p>
+          </article>
+
+          <!-- Projet 2 — lifecycle-timeline (démo en ligne) -->
+          <article class="project reveal" style="--d:4">
+            <header class="project-head">
+              <h3>lifecycle-timeline</h3>
+              <p class="project-tagline">Lifecycle timeline</p>
+            </header>
+            <div class="project-image">
+              <img src="assets/projects/lifecycle-timeline.png" alt="Screenshot of lifecycle-timeline: product lifecycle timeline" loading="lazy" width="400" height="225">
+            </div>
+            <p class="project-desc">
+              Typed JavaScript component to visualize a product's lifecycle:
+              open source support, enterprise support, end of life. Real-time
+              search, native dark theme, i18n, ESM and UMD distribution.
+            </p>
+            <ul class="chips chips-sm">
+              <li>TypeScript</li><li>JavaScript</li><li>CSS</li><li>Accessibility</li>
+            </ul>
+            <p class="project-proof">MIT · v1.3.0 · 3 stars</p>
+            <p class="project-links">
+              <a class="link-demo" href="https://ericreboisson.github.io/lifecycle-timeline/" target="_blank" rel="noopener noreferrer">
+                Live demo<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+              <a href="https://github.com/ericreboisson/lifecycle-timeline" target="_blank" rel="noopener noreferrer">
+                Source code<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+              <a href="https://www.npmjs.com/package/lifecycle-timeline" target="_blank" rel="noopener noreferrer">
+                npm<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </p>
+          </article>
+
+          <!-- Projet 3 — checker-maven-plugin (en pause, annoncé honnêtement) -->
+          <article class="project reveal" style="--d:5">
+            <header class="project-head">
+              <h3>checker-maven-plugin</h3>
+              <p class="project-tagline">Maven audit plugin</p>
+            </header>
+            <div class="project-image">
+              <img src="assets/projects/checker-maven-plugin.png" alt="Screenshot of checker-maven-plugin: Maven audit plugin" loading="lazy" width="400" height="225">
+            </div>
+            <p class="project-desc">
+              Extensible Maven plugin for multi-module Java project audit:
+              dynamically loaded rules via Java SPI, Markdown, HTML or text reports.
+            </p>
+            <ul class="chips chips-sm">
+              <li>Java</li><li>Maven</li><li>SPI</li><li>Audit</li>
+            </ul>
+            <p class="project-proof project-proof-paused">On pause — to be resumed.</p>
+            <p class="project-links">
+              <a href="https://github.com/ericreboisson/checker-maven-plugin" target="_blank" rel="noopener noreferrer">
+                Source code<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. LOISIRS — voluntarily separate from professional projects.
+         Repos live on a second GitHub account (asteroclash).
+         ================================================================= -->
+    <section class="section section-recessed" id="loisirs" aria-labelledby="titre-loisirs">
+      <div class="container">
+        <p class="eyebrow reveal">Hobbies</p>
+        <h2 class="section-title reveal" id="titre-loisirs" style="--d:1">What I build in the evening</h2>
+        <p class="section-lead reveal" style="--d:2">
+          Code for fun, on a second GitHub account. No clients,
+          no SLA — but the same reflexes.
+        </p>
+
+        <!-- Repos on https://github.com/asteroclash -->
+        <div class="hobbies">
+          <article class="hobby reveal" style="--d:3">
+            <h3>asteroclash.github.io</h3>
+            <p>Weekly flyer for the Astero Level community</p>
+            <p class="hobby-desc">
+              Showcase of 18 clans and 897 members: trophies, clan war
+              placements and minimum level per clan, refreshed every Wednesday
+              from the official Clash Royale API.
+            </p>
+            <ul class="chips chips-sm">
+              <li>HTML</li><li>CSS</li><li>Clash Royale API</li><li>GitHub Pages</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://asteroclash.github.io/" target="_blank" rel="noopener noreferrer">
+                See the site<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+              <a href="https://github.com/asteroclash/asteroclash.github.io" target="_blank" rel="noopener noreferrer">
+                Source code<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </p>
+          </article>
+
+          <article class="hobby reveal" style="--d:4">
+            <h3>neon-breaker</h3>
+            <p>Web game</p>
+            <p class="hobby-desc">Single-file HTML game.</p>
+            <p class="project-links">
+              <a href="https://github.com/asteroclash/neon-breaker" target="_blank" rel="noopener noreferrer">
+                Source code<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. CAREER — "Volunteering" and "Professional" entries are
+         deliberately distinct. Add a <li> for a new position.
+         ================================================================= -->
+    <section class="section" id="parcours" aria-labelledby="titre-parcours">
+      <div class="container">
+        <p class="eyebrow reveal">Career</p>
+        <h2 class="section-title reveal" id="titre-parcours" style="--d:1">Twenty-seven years</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal" style="--d:2">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <p class="timeline-meta">
+                <span class="timeline-org">Developpez.com</span>
+                <span class="badge badge-volunteer">Volunteering</span>
+                <span class="timeline-period">since 2003</span>
+              </p>
+              <p class="timeline-desc">
+                Writer, contributor and responsible for the Maven and SCM FAQ.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal" style="--d:3">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <p class="timeline-meta">
+                <span class="timeline-org">Fujitsu</span>
+                <span class="badge badge-job">Professional</span>
+                <span class="timeline-period">2011 – 2016</span>
+              </p>
+              <p class="timeline-desc">
+                IT Expert Java Consultant, then IT Architect. Development and
+                architecture of Java applications for a Luxembourg bank:
+                interfaces, security, communication, testing.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal" style="--d:4">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <p class="timeline-meta">
+                <span class="timeline-org">Bank, Luxembourg</span>
+                <span class="badge badge-job">Professional</span>
+                <span class="timeline-period">since October 2016</span>
+              </p>
+              <p class="timeline-desc">
+                Developer architect, Framework team. Design and maintenance
+                of libraries and reusable components integrated into the SI:
+                application security, screen validations, design system,
+                continuous deployment support. More than 100 Angular UI
+                components and several hundred Java backend components
+                (SOA, batch, integration). Stack kept up to date within LCM
+                (Spring Boot 3, Java 25, Python 3.14, Angular 21).
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6bis. WRITINGS — publications and technical contributions.
+         ================================================================= -->
+    <section class="section" id="ecrits" aria-labelledby="titre-ecrits">
+      <div class="container">
+        <p class="eyebrow reveal">Writings</p>
+        <h2 class="section-title reveal" id="titre-ecrits" style="--d:1">Publications and contributions</h2>
+        <div class="prose reveal" style="--d:2">
+          <p>
+            Member of Developpez.com from 2003 to 2016 (Expert éminent status),
+            writer and responsible for the Maven and SCM FAQ. Past technical
+            contributions: Subversion installation, Jasper Report report
+            generation, Kubuntu virtualization, book reviews on software
+            architecture, SOA, Design Patterns and Git. No more publications
+            on this platform since 2016.
+          </p>
+        </div>
+        <ul class="chips chips-sm reveal" style="--d:3">
+          <li><a href="https://www.developpez.com/user/profil/23974/elitost" target="_blank" rel="noopener noreferrer">Developpez.com profile<span class="sr-only"> (opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. CONTACT — four links, no form, no backend.
+         Modify the href below to change contact details.
+         ================================================================= -->
+    <section class="section" id="contact" aria-labelledby="titre-contact">
+      <div class="container">
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal" id="titre-contact" style="--d:1">Write or see the code</h2>
+
+        <ul class="contact-list">
+          <li class="contact-item reveal" style="--d:2">
+            <span class="contact-label">E-mail</span>
+            <a class="contact-value" href="mailto:ericreboisson@proton.me">ericreboisson@proton.me</a>
+          </li>
+          <li class="contact-item reveal" style="--d:3">
+            <span class="contact-label">LinkedIn</span>
+            <a class="contact-value" href="https://www.linkedin.com/in/ericreboisson/" target="_blank" rel="noopener noreferrer">
+              /in/ericreboisson<span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </li>
+          <li class="contact-item reveal" style="--d:4">
+            <span class="contact-label">GitHub</span>
+            <a class="contact-value" href="https://github.com/ericreboisson" target="_blank" rel="noopener noreferrer">
+              @ericreboisson<span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </li>
+          <li class="contact-item reveal" style="--d:5">
+            <span class="contact-label">Developpez.com</span>
+            <a class="contact-value" href="https://www.developpez.com/user/profil/23974/elitost" target="_blank" rel="noopener noreferrer">
+              Profile elitost<span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       8. FOOTER
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="annee">2026</span> Eric Reboisson</p>
+      <p class="footer-note">Handmade: HTML, CSS and JavaScript, no framework, no build.</p>
+      <a class="footer-top" href="#accueil">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2" defer></script>
+</body>
+</html>

@@ -318,6 +318,25 @@ ul, ol { list-style: none; }
 [data-theme="light"] .theme-toggle .icon-sun { display: none; }
 [data-theme="light"] .theme-toggle .icon-moon { display: block; }
 
+/* --- Changeur de langue --- */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  color: var(--text-2);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 180ms var(--ease), border-color 180ms var(--ease);
+  text-decoration: none;
+}
+.lang-switch:hover { color: var(--text); border-color: var(--text-3); }
+
 /* =============================================================================
    6. HERO
    ========================================================================== */
@@ -603,6 +622,21 @@ ul, ol { list-style: none; }
 }
 
 .link-demo { color: var(--accent); }
+
+/* --- Captures d'ecran des projets --- */
+.project-image {
+  margin-top: var(--sp-4);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--border-subtle);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* =============================================================================
    10. LOISIRS
