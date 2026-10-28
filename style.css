@@ -322,13 +322,13 @@ ul, ol { list-style: none; }
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 34px; height: 34px;
-  background: none;
-  border: 1px solid var(--border);
+  gap: var(--sp-1);
+  padding: var(--sp-1) var(--sp-3);
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--r-sm);
   color: var(--text-2);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-family: var(--font-mono);
   font-weight: 500;
   cursor: pointer;
