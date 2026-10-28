@@ -172,6 +172,18 @@ ul, ol { list-style: none; }
 }
 .skip-link:focus { transform: translateY(0); color: var(--btn-primary-fg); }
 
+/* --- Focus visible renforce sur les elements interactifs cles --- */
+.btn:focus-visible,
+.theme-toggle:focus-visible,
+.nav-toggle:focus-visible,
+.lang-switch:focus-visible,
+.contact-value:focus-visible,
+.project-links a:focus-visible {
+  outline: 3px solid var(--accent-hover);
+  outline-offset: 4px;
+  border-radius: var(--r-sm);
+}
+
 /* =============================================================================
    4. ANIMATIONS D'APPARITION AU SCROLL
    Regle importante : l'etat masque n'existe que si la classe "js" est presente
