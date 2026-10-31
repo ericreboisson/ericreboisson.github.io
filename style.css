@@ -424,6 +424,8 @@ ul, ol { list-style: none; }
   font-size: 0.8125rem;
   color: var(--text-2);
   margin-top: 2px;
+  white-space: normal;
+  line-height: 1.3;
 }
 
 .hero-actions {
@@ -806,6 +808,12 @@ ul, ol { list-style: none; }
 }
 .contact-value:hover { color: var(--accent); }
 
+/* Placeholder de contact : ni cliquable, ni confondu avec une vraie valeur. */
+.contact-value.placeholder {
+  color: var(--text-3);
+}
+.footer-contact .placeholder { margin-inline: var(--sp-2); }
+
 /* =============================================================================
    13. PIED DE PAGE
    ========================================================================== */
@@ -826,6 +834,16 @@ ul, ol { list-style: none; }
 }
 
 .footer-note { font-family: var(--font-mono); }
+
+.footer-updated,
+.footer-contact {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--text-3);
+}
+
+.footer-contact a { color: var(--text); }
+.footer-contact a:hover { color: var(--accent); }
 
 .footer-top { font-size: 0.8125rem; font-weight: 500; }
 

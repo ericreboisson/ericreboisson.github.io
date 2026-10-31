@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- ===================================================================
-       SEO — Modifiez title et description pour adapter la page à votre SEO.
+       SEO — titre et description à maintenir à jour avec le contenu.
        =================================================================== -->
-  <title>Eric Reboisson — Développeur architecte, Luxembourg</title>
-  <meta name="description" content="Développeur architecte au Luxembourg — 27 ans d'expérience informatique. Frameworks Angular et Spring Boot, sécurité applicative, validation, charte graphique des applications bancaires. Java, TypeScript, Python, open source. Projets : asteroclash, lifecycle-timeline, npm-goodjob, checker-maven-plugin.">
+  <title>Eric Reboisson — Architecte développeur Java / Angular / Spring Boot | Luxembourg</title>
+  <meta name="description" content="Architecte développeur au Luxembourg : Java, Angular, Spring Boot, Python, sécurité applicative. Frameworks bancaires, librairies open source, LCM depuis 1999.">
   <meta name="author" content="Eric Reboisson">
   <meta name="keywords" content="Spring Boot, Java, Python, Angular, TypeScript, sécurité applicative, architecture logicielle, SOA, batch, accostage, Luxembourg, ITIL, OCPJP, OCPWCD, développeur architecte, LCM, Developpez.com">
   <link rel="canonical" href="https://ericreboisson.github.io/">
@@ -16,8 +16,8 @@
   <!-- Open Graph — l'image est générée en 1200x630 (voir README) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ericreboisson.github.io/">
-  <meta property="og:title" content="Eric Reboisson — Développeur architecte">
-  <meta property="og:description" content="Développeur architecte au Luxembourg. Je construis les frameworks Angular et Spring Boot sur lesquels tournent les applications du SI : sécurité, validation, charte graphique.">
+  <meta property="og:title" content="Eric Reboisson — Architecte développeur Java / Angular / Spring Boot">
+  <meta property="og:description" content="Architecte développeur au Luxembourg. Java, Angular, Spring Boot, Python et sécurité applicative. Frameworks bancaires et librairies open source.">
   <meta property="og:image" content="https://ericreboisson.github.io/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,8 +26,8 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Eric Reboisson — Développeur architecte">
-  <meta name="twitter:description" content="Développeur architecte au Luxembourg. Frameworks Angular et Spring Boot, sécurité applicative, validation, charte graphique. Open source.">
+  <meta name="twitter:title" content="Eric Reboisson — Architecte développeur Java / Angular / Spring Boot">
+  <meta name="twitter:description" content="Architecte développeur au Luxembourg. Frameworks Angular et Spring Boot, sécurité applicative, librairies open source.">
   <meta name="twitter:image" content="https://ericreboisson.github.io/assets/og-image.png">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -37,27 +37,30 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Eric Reboisson",
-    "jobTitle": "Développeur architecte",
+    "jobTitle": "Architecte développeur — équipe Framework",
     "worksFor": {
       "@type": "Organization",
-      "name": "Banque, Luxembourg"
+      "name": "Banque luxembourgeoise"
     },
     "knowsAbout": [
-      "Spring Boot", "Java", "Python", "Angular", "TypeScript",
-      "sécurité applicative", "architecture logicielle", "SOA", "batch", "accostage"
+      "TypeScript", "Java", "Python", "JavaScript",
+      "Angular", "HTML", "CSS/SCSS",
+      "Spring", "Spring Boot",
+      "ELK", "Git", "Shell",
+      "sécurité applicative", "SAST SonarQube", "CVE Xray", "DAST",
+      "architecture logicielle", "SOA", "batch", "accostage",
+      "tests unitaires", "Antora", "Life Cycle Management"
     ],
     "url": "https://ericreboisson.github.io/",
     "sameAs": [
-      "https://www.linkedin.com/in/ericreboisson/",
       "https://github.com/ericreboisson",
       "https://www.developpez.com/user/profil/23974/elitost"
     ],
-    "alumniOf": [
-      {
-        "@type": "Organization",
-        "name": "Fujitsu"
-      }
-    ]
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Luxembourg",
+      "addressCountry": "LU"
+    }
   }
   </script>
 
@@ -66,7 +69,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 
   <!-- ===================================================================
        Thème : appliqué AVANT le premier rendu pour éviter le flash blanc.
@@ -147,7 +150,7 @@
         <div class="hero-text">
           <p class="eyebrow reveal">Luxembourg</p>
           <h1 class="reveal" style="--d:1">Eric Reboisson</h1>
-          <p class="hero-role reveal" style="--d:2">Développeur architecte — équipe Framework</p>
+          <p class="hero-role reveal" style="--d:2">Architecte développeur — équipe Framework</p>
           <p class="hero-pitch reveal" style="--d:3">
             Je construis les frameworks Angular et Spring Boot sur lesquels tournent
             les applications du SI : sécurité, validation, charte graphique.
@@ -158,12 +161,8 @@
               <span class="hero-metric-label">d'expérience informatique</span>
             </span>
             <span class="hero-metric">
-              <span class="hero-metric-value">100+</span>
-              <span class="hero-metric-label">composants Angular UI</span>
-            </span>
-            <span class="hero-metric">
-              <span class="hero-metric-value">Plusieurs centaines</span>
-              <span class="hero-metric-label">composants Java backend</span>
+              <span class="hero-metric-value">100</span>
+              <span class="hero-metric-label">projets Angular consomment les librairies du Framework</span>
             </span>
           </div>
           <p class="hero-since reveal" style="--d:5">Dans l'informatique depuis 1999.</p>
@@ -192,18 +191,24 @@
         <h2 class="section-title reveal" id="titre-a-propos" style="--d:1">Ce que je fais</h2>
         <div class="prose reveal" style="--d:2">
           <p>
-            Je suis développeur architecte au sein d'une équipe Framework dans une banque
-            luxembourgeoise. Je construis des frameworks Angular et Spring Boot en Java
-            et TypeScript, avec Python pour l'outillage. L'équipe conçoit des librairies
-            et composants réutilisables intégrés par l'ensemble des applications du SI :
-            sécurité applicative, validation des écrans, charte graphique.
+            Je suis développeur architecte au sein d'une équipe Framework d'environ
+            10 personnes, dans une banque luxembourgeoise. Je développe des librairies
+            réutilisables en Java, Angular/TypeScript et Python, consommées par les
+            projets du SI de la banque. Je suis responsable d'Angular et de la charte
+            graphique Angular (CSS/SCSS). Côté Java : Spring / Spring Boot.
           </p>
           <p>
-            Auparavant, j'ai été consultant Java puis architecte chez Fujitsu, sur des
-            applications bancaires. Certifié ITIL Foundation, OCPJP et OCPWCD.
-            Je publie également des outils open source sur npm et Maven. A contribué
-            à Developpez.com de 2003 à 2016 (statut Expert éminent, responsable de la
-            FAQ Maven et SCM).
+            Ma casquette sécurité couvre l'authentification, l'autorisation, le SAST
+            (SonarQube), la détection de CVE (Xray) et le DAST. Tous les composants
+            (TypeScript/Angular, Java, Python) sont couverts par des tests unitaires.
+            J'utilise l'IA pour le développement (OpenCode, Bob Shell, etc.).
+            La librairie Angular propose des composants et s'intègre aux systèmes de
+            la banque (log centralisé ELK, monitoring, analytics). J'assure le Life
+            Cycle Management (LCM) de toutes les librairies : Spring Boot 3, Java 25,
+            Python 3.14, Angular 21 (migration vers Angular 22 à venir). Une galerie
+            de charte graphique en Angular, avec centralisation CSS/SCSS, est utilisable
+            par les applicatifs. La documentation est rédigée avec Antora et
+            versionnée par composant.
           </p>
         </div>
       </div>
@@ -246,10 +251,17 @@
           <li class="skill-group reveal" style="--d:6">
             <h3>Sécurité applicative</h3>
             <ul class="chips">
-              <li>Contrôles d'accès</li><li>Durcissement</li><li>Revue de code</li>
+              <li>Authentification</li><li>Autorisation</li><li>SAST (SonarQube)</li>
+              <li>CVE (Xray)</li><li>DAST</li><li>Revue de code</li>
             </ul>
           </li>
           <li class="skill-group reveal" style="--d:7">
+            <h3>Outils et méthodes</h3>
+            <ul class="chips">
+              <li>Maven</li><li>Jenkins</li><li>SonarQube</li><li>Antora</li>
+            </ul>
+          </li>
+          <li class="skill-group reveal" style="--d:8">
             <p class="skill-note">
               Toutes les versions sont maintenues à jour dans le cadre du Life Cycle Management (LCM) :
               Spring Boot 3, Java 25, Python 3.14, Angular 21.
@@ -260,17 +272,19 @@
     </section>
 
     <!-- =================================================================
-         4. PROJETS — pour ajouter un projet : copiez un <article> complet.
-         La première carte (class="project project-featured") occupe deux
-         colonnes sur grand écran : c'est la mise en avant.
+         4. PROJETS — open source uniquement. Pour ajouter un projet :
+         copiez un <article> complet. La première carte
+         (class="project project-featured") occupe deux colonnes sur grand écran.
+         asteroclash reste dans « Centres d'intérêt » : il n'est pas open source ici.
          ================================================================= -->
     <section class="section" id="projets" aria-labelledby="titre-projets">
       <div class="container">
         <p class="eyebrow reveal">Projets</p>
         <h2 class="section-title reveal" id="titre-projets" style="--d:1">Open source</h2>
         <p class="section-lead reveal" style="--d:2">
-          Des outils publiés sur npm. Le même travail que celui de l'équipe Framework,
-          appliqué à l'open source : des règles partagées, vérifiables par l'outil.
+          Des outils publiés en open source. Le même travail que celui de l'équipe
+          Framework, appliqué à l'open source : des règles partagées, vérifiables
+          par l'outil.
         </p>
 
         <div class="projects">
@@ -308,11 +322,11 @@
             </header>
             <p class="project-desc">
               Composant JavaScript typé pour visualiser la durée de vie d'un produit :
-              support open source, support entreprise, fin de vie. Recherche temps réel,
-              thème sombre natif, i18n, distribution ESM et UMD.
+              support open source, support entreprise, fin de vie. Recherche temps
+              réel, thème sombre natif, i18n, distribution ESM et UMD.
             </p>
             <ul class="chips chips-sm">
-              <li>TypeScript</li><li>JavaScript</li><li>CSS</li><li>Accessibilité</li>
+              <li>JavaScript</li><li>TypeScript</li><li>CSS</li><li>Accessibilité</li><li>Vitest</li><li>i18n</li>
             </ul>
             <p class="project-proof">MIT · v1.3.0 · 3 étoiles</p>
             <p class="project-links">
@@ -337,7 +351,8 @@
             <p class="project-desc">
               Plugin Maven extensible pour l'audit de projets Java multi-modules :
               règles chargées dynamiquement via le SPI Java, rapports Markdown,
-              HTML ou texte.
+              HTML ou texte. Projet né d'un besoin professionnel, puis amené à la
+              banque.
             </p>
             <ul class="chips chips-sm">
               <li>Java</li><li>Maven</li><li>SPI</li><li>Audit</li>
@@ -356,6 +371,7 @@
 
     <!-- =================================================================
          5. CENTRES D'INTÉRÊT — ce que je fais en dehors du travail.
+         asteroclash n'est pas dans Open source : c'est un projet personnel.
          ================================================================= -->
     <section class="section section-recessed" id="centres-interet" aria-labelledby="titre-centres-interet">
       <div class="container">
@@ -370,8 +386,8 @@
             <h3>asteroclash.github.io</h3>
             <p>Gestionnaire de clans — Clash Royale</p>
             <p class="hobby-desc">
-              Vitrine de 18 clans et 897 membres : trophées, places en guerre de
-              clans et niveau minimum par clan, depuis l'API officielle Clash
+              Vitrine de 17 clans et environ 897 membres : trophées, places en guerre
+              de clans et niveau minimum par clan, depuis l'API officielle Clash
               Royale. Mise à jour quand j'en ai envie.
             </p>
             <ul class="chips chips-sm">
@@ -408,8 +424,8 @@
     </section>
 
     <!-- =================================================================
-         6. PARCOURS — les entrées "Bénévolat" et "Professionnel" sont
-         volontairement distinctes. Ajoutez une <li> pour un nouveau poste.
+         6. PARCOURS — ordre antéchronologique, dates et employeurs.
+         Les pastilles « Bénévolat » et « Professionnel » restent distinctes.
          ================================================================= -->
     <section class="section" id="parcours" aria-labelledby="titre-parcours">
       <div class="container">
@@ -421,12 +437,18 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <p class="timeline-meta">
-                <span class="timeline-org">Developpez.com</span>
-                <span class="badge badge-volunteer">Bénévolat</span>
-                <span class="timeline-period">depuis 2003</span>
+                <span class="timeline-org">Banque, Luxembourg</span>
+                <span class="badge badge-job">Professionnel</span>
+                <span class="timeline-period">depuis octobre 2016</span>
               </p>
               <p class="timeline-desc">
-                Rédacteur, contributeur et responsable de la FAQ Maven et SCM.
+                Architecte développeur, équipe Framework (~10 personnes).
+                Librairies Java, Angular/TypeScript et Python consommées par le SI
+                de la banque : sécurité applicative (authentification, autorisation,
+                SAST SonarQube, détection de CVE Xray, DAST), Spring / Spring Boot,
+                tests unitaires sur tous les composants. Life Cycle Management de
+                toutes les librairies. 100 projets Angular consomment les librairies
+                du Framework ; Angular 21, migration vers Angular 22 à venir.
               </p>
             </div>
           </li>
@@ -435,18 +457,14 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <p class="timeline-meta">
-                <span class="timeline-org">Banque, Luxembourg</span>
+                <span class="timeline-org">Fujitsu Technology Solutions (Luxembourg)</span>
                 <span class="badge badge-job">Professionnel</span>
-                <span class="timeline-period">depuis octobre 2016</span>
+                <span class="timeline-period">février 2011 – octobre 2016</span>
               </p>
               <p class="timeline-desc">
-                Développeur architecte, équipe Framework. Conception et maintenance
-                de librairies et composants réutilisables intégrés au SI : sécurité
-                applicative, validations des écrans, charte graphique, support au
-                déploiement continu. Plus de 100 composants Angular UI et plusieurs
-                centaines de composants Java backend (SOA, batch, accostage). Stack
-                maintenue à jour dans le cadre du LCM (Spring Boot 3, Java 25,
-                Python 3.14, Angular 21).
+                Architect & Consultant IT expert Java. Migration plateforme Lombard,
+                Digital Signature Private Banking (Fortis), migration d'environ 300
+                applications mainframe vers BGL, équipe Framework BGL.
               </p>
             </div>
           </li>
@@ -455,14 +473,14 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <p class="timeline-meta">
-                <span class="timeline-org">Fujitsu</span>
+                <span class="timeline-org">Sogeti (Luxembourg)</span>
                 <span class="badge badge-job">Professionnel</span>
-                <span class="timeline-period">2011 – 2016</span>
+                <span class="timeline-period">janvier 2007 – février 2011</span>
               </p>
               <p class="timeline-desc">
-                Consultant IT Expert Java, puis IT Architect. Développement et
-                architecture d'applications Java pour une banque luxembourgeoise :
-                interfaces, sécurité, communication, tests.
+                Consultant IT expert Java. Migration COLD vers Alfresco ECM (CACEIS),
+                Thesaurus (CJUE), Translator's Desktop (Commission européenne),
+                DGTVista (Commission européenne).
               </p>
             </div>
           </li>
@@ -471,13 +489,15 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <p class="timeline-meta">
-                <span class="timeline-org">Sogeti</span>
+                <span class="timeline-org">Steria (69)</span>
                 <span class="badge badge-job">Professionnel</span>
-                <span class="timeline-period">2007 – 2011</span>
+                <span class="timeline-period">2004 – janvier 2007</span>
               </p>
               <p class="timeline-desc">
-                Consultant puis architecte Java sur des applications bancaires et
-                de services : conception, développement et accompagnement technique.
+                Ingénieur Étude et Développement. Applications embarquées (tablet PC)
+                pour Gaz de France (DolceVita), audit et conception de framework
+                métier pour l'IFP, portail santé Ligne claire, prévisions de
+                consommation Gaz de France.
               </p>
             </div>
           </li>
@@ -486,14 +506,14 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <p class="timeline-meta">
-                <span class="timeline-org">Steria</span>
+                <span class="timeline-org">Parsys (93)</span>
                 <span class="badge badge-job">Professionnel</span>
-                <span class="timeline-period">2004 – 2007</span>
+                <span class="timeline-period">2004 – janvier 2007</span>
               </p>
               <p class="timeline-desc">
-                Développeur puis architecte Java. Conception et développement
-                d'applications d'entreprise : architecture, intégration et suivi
-                technique des projets.
+                Ingénieur Étude et Développement. Gestion de parcs informatiques
+                (Accor, Decathlon, Sun…), framework applicatif du SI.
+                Java/J2EE, Weblogic 8.1, Oracle 9i.
               </p>
             </div>
           </li>
@@ -502,13 +522,14 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <p class="timeline-meta">
-                <span class="timeline-org">Parsys</span>
+                <span class="timeline-org">PhE Conseil (10)</span>
                 <span class="badge badge-job">Professionnel</span>
-                <span class="timeline-period">2002 – 2004</span>
+                <span class="timeline-period">1999 – 2004</span>
               </p>
               <p class="timeline-desc">
-                Développeur Java/J2EE. Projets d'intégration, de portail et de
-                services web pour le secteur bancaire et l'administration.
+                Développeur Java puis architecte Java. Applications métier, gestion
+                commerciale, comptable et logistique, salle de marché (Soufflet).
+                VB6, PowerBuilder, Sybase, SQL Server.
               </p>
             </div>
           </li>
@@ -517,13 +538,12 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-body">
               <p class="timeline-meta">
-                <span class="timeline-org">PhE Conseil</span>
-                <span class="badge badge-job">Professionnel</span>
-                <span class="timeline-period">1999 – 2002</span>
+                <span class="timeline-org">Developpez.com</span>
+                <span class="badge badge-volunteer">Bénévolat</span>
+                <span class="timeline-period">2003 – 2016</span>
               </p>
               <p class="timeline-desc">
-                Développeur Java. Premiers projets d'architecture et de développement
-                d'applications métier.
+                Rédacteur, contributeur et responsable de la FAQ Maven et SCM.
               </p>
             </div>
           </li>
@@ -555,90 +575,8 @@
     </section>
 
     <!-- =================================================================
-         6bis. PROJETS — réalisations et code ouvert.
-         ================================================================= -->
-    <section class="section" id="projets" aria-labelledby="titre-projets">
-      <div class="container">
-        <p class="eyebrow reveal">Projets</p>
-        <h2 class="section-title reveal" id="titre-projets" style="--d:1">Réalisations et code ouvert</h2>
-        <p class="section-lead reveal" style="--d:2">
-          Quelques projets personnels et contributions techniques.
-        </p>
-        <ul class="projects-grid reveal" style="--d:3">
-          <li class="project-card reveal" style="--d:4">
-            <h3 class="project-title">asteroclash.github.io</h3>
-            <p class="project-desc">
-              Gestionnaire de clans Clash Royale : vitrine de 18 clans et
-              897 membres, trophées, places en guerre de clans et niveau
-              minimum par clan, depuis l'API officielle Clash Royale.
-            </p>
-            <ul class="chips chips-sm">
-              <li>HTML</li><li>CSS</li><li>API Clash Royale</li><li>GitHub Pages</li>
-            </ul>
-            <p class="project-links">
-              <a href="https://asteroclash.github.io/" target="_blank" rel="noopener noreferrer">
-                Voir le site<span class="sr-only"> (ouvre un nouvel onglet)</span>
-              </a>
-              <a href="https://github.com/asteroclash/asteroclash.github.io" target="_blank" rel="noopener noreferrer">
-                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
-              </a>
-            </p>
-          </li>
-          <li class="project-card reveal" style="--d:5">
-            <h3 class="project-title">npm-goodjob</h3>
-            <p class="project-desc">
-              Outil npm — vérification des bonnes pratiques et
-              qualité du code JavaScript et TypeScript.
-            </p>
-            <ul class="chips chips-sm">
-              <li>npm</li><li>JavaScript</li><li>TypeScript</li><li>CLI</li>
-            </ul>
-            <p class="project-links">
-              <a href="https://github.com/ericreboisson/npm-goodjob" target="_blank" rel="noopener noreferrer">
-                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
-              </a>
-            </p>
-          </li>
-          <li class="project-card reveal" style="--d:6">
-            <h3 class="project-title">lifecycle-timeline</h3>
-            <p class="project-desc">
-              Timeline de cycle de vie — visualisation des étapes de
-              déploiement, de maintenance et de retrait des composants
-              du SI.
-            </p>
-            <ul class="chips chips-sm">
-              <li>Java</li><li>Spring Boot</li><li>Timeline</li><li>API</li>
-            </ul>
-            <p class="project-links">
-              <a href="https://ericreboisson.github.io/lifecycle-timeline/" target="_blank" rel="noopener noreferrer">
-                Voir le site<span class="sr-only"> (ouvre un nouvel onglet)</span>
-              </a>
-              <a href="https://github.com/ericreboisson/lifecycle-timeline" target="_blank" rel="noopener noreferrer">
-                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
-              </a>
-            </p>
-          </li>
-          <li class="project-card reveal" style="--d:7">
-            <h3 class="project-title">checker-maven-plugin</h3>
-            <p class="project-desc">
-              Plugin Maven — vérification et conformité des builds
-              Java dans les pipelines CI/CD.
-            </p>
-            <ul class="chips chips-sm">
-              <li>Maven</li><li>Java</li><li>CI/CD</li><li>Plugin</li>
-            </ul>
-            <p class="project-links">
-              <a href="https://github.com/ericreboisson/checker-maven-plugin" target="_blank" rel="noopener noreferrer">
-                Code source<span class="sr-only"> (ouvre un nouvel onglet)</span>
-              </a>
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- =================================================================
          7. FORMATION — diplômes et certifications.
+         Aucune formation professionnelle (Devoxx, etc.) ni section Langues.
          ================================================================= -->
     <section class="section" id="formation" aria-labelledby="titre-formation">
       <div class="container">
@@ -660,24 +598,24 @@
     </section>
 
     <!-- =================================================================
-         8. CONTACT — quatre liens, aucun formulaire, aucun backend.
-         Modifiez les href ci-dessous pour changer de coordonnées.
+         8. CONTACT — aucun formulaire, aucun backend.
+         [EMAIL] et [LIEN_LINKEDIN] sont des placeholders à renseigner
+         par l'utilisateur avant mise en ligne.
          ================================================================= -->
     <section class="section" id="contact" aria-labelledby="titre-contact">
       <div class="container">
         <p class="eyebrow reveal">Contact</p>
         <h2 class="section-title reveal" id="titre-contact" style="--d:1">Écrire ou voir le code</h2>
+        <!-- À compléter : [EMAIL] et [LIEN_LINKEDIN] (valeurs réelles à fournir par l'utilisateur) -->
 
         <ul class="contact-list">
           <li class="contact-item reveal" style="--d:2">
             <span class="contact-label">E-mail</span>
-            <a class="contact-value" href="mailto:ericreboisson@proton.me">ericreboisson@proton.me</a>
+            <span class="contact-value placeholder" aria-label="Adresse e-mail à compléter">[EMAIL]</span>
           </li>
           <li class="contact-item reveal" style="--d:3">
             <span class="contact-label">LinkedIn</span>
-            <a class="contact-value" href="https://www.linkedin.com/in/ericreboisson/" target="_blank" rel="noopener noreferrer">
-              /in/ericreboisson<span class="sr-only"> (ouvre un nouvel onglet)</span>
-            </a>
+            <span class="contact-value placeholder" aria-label="Profil LinkedIn à compléter">[LIEN_LINKEDIN]</span>
           </li>
           <li class="contact-item reveal" style="--d:4">
             <span class="contact-label">GitHub</span>
@@ -704,11 +642,17 @@
   </main>
 
   <!-- =====================================================================
-       8. PIED DE PAGE
+       9. PIED DE PAGE
        ===================================================================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; <span id="annee"></span> Eric Reboisson</p>
+      <p class="footer-updated">Dernière mise à jour : octobre 2026</p>
+      <p class="footer-contact">
+        <a href="https://github.com/ericreboisson" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (ouvre un nouvel onglet)</span></a>
+        <span class="placeholder" aria-label="LinkedIn à compléter">[LIEN_LINKEDIN]</span>
+        <span class="placeholder" aria-label="E-mail à compléter">[EMAIL]</span>
+      </p>
       <p class="footer-note">Fait à la main : HTML, CSS et JavaScript, sans framework ni build.</p>
       <a class="footer-top" href="#accueil">Retour en haut</a>
     </div>
